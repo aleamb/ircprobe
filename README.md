@@ -44,7 +44,7 @@ usage: ircprobe [-bd] [-h host/ip] [-n connections] [-p port] [-c channel]
 Linux only.
 
 ``
-g++ ircprobe.cpp -o ircprobe
+$ g++ ircprobe.cpp -o ircprobe
 `` 
 
 ## Examples
