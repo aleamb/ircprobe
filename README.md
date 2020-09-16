@@ -14,7 +14,7 @@ Lag is write in a data file. Format is:
 
 ## Options
 
-``
+```
 usage: ircprobe [-bd] [-h host/ip] [-n connections] [-p port] [-c channel]
                 [--min=minimum] [--max=maximum] [--connin=interval]
                 [--chnum=channels] [--cprefix=prefix]
@@ -37,7 +37,7 @@ usage: ircprobe [-bd] [-h host/ip] [-n connections] [-p port] [-c channel]
         --nprefix=prefix   Channel prefix for connections
         --help             This message
         
-``
+```
 
 ## Build
 
