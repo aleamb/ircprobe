@@ -47,22 +47,22 @@ const char* usage = "[-bd] [-h host/ip] [-n connections] [-p port] [-c channel]\
 										"                [--chnum=channels] [--cprefix=prefix]\n" \
 										"                [--nprefix=prefix] [--help]\n";
 
-const char* summary =  "        -b                 Disable tests.\n" \
-											 "        -d                 Enable debug. Writes all irc server ouput in a file.\n" \
-											 "                           with name <host>.log.\n" \
-											 "        -h host            mandatory option. Set irc host to connect.\n" \
-											 "        -n length          mandatory option. Set how many connections.\n" \
-											 "        -p port            IRC port.\n" \
-											 "        -c channel         Connect all sockets only to this channel.\n" \
-											 "        --chnum=channels   Number of channels to distribute connections.\n" \
-											 "        --connin=interval  Interval between sequential connections.\n" \
-											 "        --min=milis        Minimal range of time in which each connection will\n" \
-											 "                           send a message.\n" \
-											 "        --max=milis        Maximum range of time in which each connection will\n" \
-											 "                           send a message.\n" \
-											 "        --cprefix=prefix   Nick prefix for connections.\n" \
-											 "        --nprefix=prefix   Channel prefix for connections.\n" \
-											 "        --help             This message.\n";
+const char* summary =  " -b                 Disable tests.\n" \
+											 " -d                 Enable debug. Writes all irc server ouput in a file.\n" \
+											 "                    with name <host>.log.\n" \
+											 " -h host            Set irc host to connect.\n" \
+											 " -n length          Set how many connections.\n" \
+											 " -p port            IRC port (default 6667)\n" \
+											 " -c channel         Connect all sockets only to this channel.\n" \
+											 " --chnum=channels   Number of channels to distribute connections (default 5)\n" \
+											 " --connin=interval  Interval (in ms) between sequential connections (default 300)\n" \
+											 " --min=milis        Minimal range of time (in ms) in which each connection will\n" \
+											 "                    send a message (default 1000 ms)\n" \
+											 " --max=milis       Maximum range of time in which each connection will\n" \
+											 "                    send a message (default 10000 ms)\n" \
+											 " --cprefix=prefix  Nick prefix for connections (default 'test')\n" \
+											 " --nprefix=prefix  Channel prefix for connections (default 'test')\n" \
+											 " --help            This message.\n";
 
 
 struct cstatus
@@ -162,7 +162,7 @@ void print_usage() {
 
 void print_help() {
 				print_usage();
-				std::cout << "\tCommand Summary:" << std::endl << summary << std::endl; 
+				std::cout << "Command Summary:" << std::endl << summary << std::endl; 
 }
 
 int main(int argc, char **argv)
