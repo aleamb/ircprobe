@@ -6,7 +6,7 @@ Dirty utility for testing IRCd
 
 modprobe test an IRC daemon creating thousands of connections tah wiil send hundred of messages, measuring lag between receptions.
 
-Lag is write in a data file. Format is:
+Lag stats are written in a data file in current directory. Format is:
 
 ``
 <seconds from start> <lag in miliseconds>
