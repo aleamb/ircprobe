@@ -4,7 +4,7 @@ Dirty utility for testing IRCd
 
 **WORK IN PROGRESS**
 
-modprobe test an IRC daemon creating thousands of connections tah wiil send hundred of messages, measuring lag between receptions.
+modprobe test an IRC daemon creating thousands of connections that will send hundred of messages, measuring lag between receptions.
 
 Lag stats are written in a data file in current directory. Format is:
 
